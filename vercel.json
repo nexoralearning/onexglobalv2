@@ -1,0 +1,17 @@
+{
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "pnpm --filter @workspace/api-server run build && pnpm --filter @workspace/unihub run build",
+  "outputDirectory": "artifacts/unihub/dist/public",
+  "framework": null,
+  "functions": {
+    "api/[...slug].js": {
+      "includeFiles": "artifacts/api-server/dist/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

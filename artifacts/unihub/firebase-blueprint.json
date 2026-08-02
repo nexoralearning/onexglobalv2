@@ -1,0 +1,82 @@
+{
+  "entities": {
+    "UserDoc": {
+      "title": "User Document",
+      "description": "User profile data",
+      "type": "object",
+      "properties": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "plan": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["email"]
+    },
+    "Folder": {
+      "title": "Folder",
+      "description": "User directory folder",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name"]
+    },
+    "File": {
+      "title": "File Metadata",
+      "description": "File record metadata",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "folderId": { "type": "string" },
+        "size": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name"]
+    },
+    "Note": {
+      "title": "Note",
+      "description": "User personal note",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["title"]
+    },
+    "TeamMember": {
+      "title": "Team Member",
+      "description": "Team member details",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["name"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserDoc",
+      "description": "Root user document"
+    },
+    "/users/{userId}/folders/{folderId}": {
+      "schema": "Folder",
+      "description": "Folders belonging to user"
+    },
+    "/users/{userId}/files/{fileId}": {
+      "schema": "File",
+      "description": "Files belonging to user"
+    },
+    "/users/{userId}/notes/{noteId}": {
+      "schema": "Note",
+      "description": "Notes belonging to user"
+    },
+    "/users/{userId}/teamMembers/{memberId}": {
+      "schema": "TeamMember",
+      "description": "Team members added by user"
+    }
+  }
+}

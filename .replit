@@ -1,0 +1,32 @@
+modules = ["nodejs-20", "web", "bash"]
+
+[deployment]
+router = "application"
+deploymentTarget = "autoscale"
+
+[deployment.postBuild]
+args = ["pnpm", "store", "prune"]
+env = { "CI" = "true" }
+
+[workflows]
+runButton = "Project"
+
+[agent]
+stack = "PNPM_WORKSPACE"
+expertMode = true
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 20000
+
+[nix]
+channel = "stable-25_05"
+
+[userenv]
+
+[userenv.shared]
+WHOP_BASIC_PLAN_ID = "plan_ORGioCWYgnsKj"
+WHOP_COMPANY_ID = "biz_j8fEGRGUYQIDsE"
+WHOP_PREMIUM_PLAN_ID = "plan_LOsScZrbdgHyJ"
+WHOP_BASIC_PRODUCT_ID = "prod_B9sEr6EFp59aA"
+WHOP_PREMIUM_PRODUCT_ID = "prod_T8FVgggIJrySf"

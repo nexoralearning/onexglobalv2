@@ -1,0 +1,6 @@
+{
+  "name": "UniHub - Onex Global",
+  "description": "Comprehensive student learning platform with study tools, assignments, past papers, AI advisor, and career hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

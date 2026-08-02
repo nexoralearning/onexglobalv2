@@ -1,0 +1,109 @@
+Build a complete international student platform called "UniHub".
+Create a modern responsive web application with a professional dark theme UI. The app should be designed for students worldwide.
+The app must include:
+Authentication
+Create a normal login and signup system UI.
+No backend authentication.
+Save user accounts locally using localStorage.
+Keep users logged in after refreshing.
+Include profile settings.
+Dashboard
+Create a student dashboard showing:
+Welcome message
+University
+Year of study
+Subjects
+Upcoming assignments
+Recommended resources
+Internship recommendations
+Learning Hub
+Create a complete learning section:
+Students choose country, university, degree, year, and subject.
+Every subject has:
+Tutorials
+YouTube learning videos
+Online resources
+Recommended websites
+Study guides
+Organize it internationally with categories for:
+Mauritius
+France
+UK
+USA
+Canada
+Australia
+India
+Germany
+Singapore
+UAE
+Other countries
+YouTube Resources
+Create an automatic resource system structure:
+Videos categorized by subject.
+Include API-ready structure for future YouTube API integration.
+For now use sample data.
+Prepare the code so videos can refresh automatically later.
+Notes System
+Create:
+Subject notes
+Upload/download buttons
+Categories
+Search function
+Filters by university and subject
+Past Papers
+Create:
+Past exam papers section
+Filters:
+Country
+University
+Degree
+Subject
+Year
+Study Groups
+Create:
+Student communities
+Subject groups
+University groups
+Chat interface UI
+Assignments
+Create:
+Assignment tracker
+Due dates
+Status:
+Pending
+Completed
+Overdue
+Jobs & Internships
+Create:
+Global internship database UI
+Search and filtering:
+Country
+Field
+Remote/on-site
+Paid/unpaid
+Experience level
+Include structure ready for future automatic internship API updates.
+Marketplace
+Create:
+Student marketplace
+Sell/buy items
+Categories:
+Books
+Electronics
+Study equipment
+Settings
+Add:
+Profile settings
+Dark/light mode
+Language selection
+Notification settings
+Account settings
+Technical Requirements
+Use React + modern UI components.
+Make it fully responsive for mobile and desktop.
+Use clean component structure.
+Create reusable components.
+Make navigation similar to a real SaaS platform.
+Use sample international data.
+Prepare code for future backend/database/API integration.
+The goal is to create a professional MVP of a global student ecosystem.

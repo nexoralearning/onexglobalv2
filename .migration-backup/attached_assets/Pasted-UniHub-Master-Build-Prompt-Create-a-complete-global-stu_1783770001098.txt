@@ -1,0 +1,138 @@
+UniHub Master Build Prompt
+Create a complete global student ecosystem platform called UniHub.
+The application must be an international university platform designed for students worldwide.
+Build a modern responsive web app with a professional dark theme, mobile and desktop support.
+1. Global University Course Resource Database
+Create a complete expandable education database.
+Do not only include 4 subjects. The system must support all university subjects and degrees worldwide.
+Organize everything by:
+Country
+University
+Degree
+Faculty
+Year of study
+Subject
+Module
+Support complete degree paths:
+Year 1
+Year 2
+Year 3
+Year 4+
+Each subject must contain:
+Course overview
+Modules
+Topics
+Study resources
+Recommended websites
+Online courses
+Documentation
+Books/resources
+YouTube learning links
+Practice material
+Create the system so new degrees, subjects, and universities can easily be added later.
+2. Past Papers Database
+Create a global past papers system.
+Include:
+University exams
+Subject exams
+Year filtering
+Degree filtering
+Country filtering
+Allow students to access past papers from:
+2000 to 2026
+Each paper should have:
+University
+Subject
+Year
+Semester
+Download/view option
+Make the system expandable for future uploads.
+3. Smart Learning Resources
+Create a structured learning system.
+Do not simply display random videos.
+Resources should be organized into learning paths:
+Beginner → Intermediate → Advanced
+Each topic should contain recommended resources.
+Prepare the system for future AI ranking and automatic resource updates.
+4. Automatic Refresh Systems
+Create architecture ready for automatic updates.
+The platform should support automatic refreshing of:
+Internship listings
+Job opportunities
+Learning resources
+Educational links
+Prepare the system for future API integration.
+5. Global Internship & Job Platform
+Create a worldwide internship and job database.
+Include:
+Internships
+Graduate jobs
+Remote jobs
+Part-time jobs
+Research opportunities
+Filters:
+Country
+Field
+Degree
+Experience level
+Paid/unpaid
+Remote/on-site
+Prepare automatic updates from job sources/APIs.
+6. Study Groups
+Create student communities.
+Features:
+Create study groups
+Join groups
+University groups
+Subject groups
+Degree groups
+Discussion area
+Messaging interface
+7. Student Marketplace
+Create a marketplace where students can:
+Sell skills
+Offer services
+Sell study materials
+Buy educational resources
+Categories:
+Programming
+Design
+Tutoring
+Writing
+Marketing
+Notes
+Books
+Include:
+Seller profiles
+Listings
+Search
+Messaging between users
+8. Messaging System
+Create a simple messaging feature.
+Allow:
+Students to message each other
+Marketplace communication
+Study group communication
+9. User Accounts
+Create normal signup/login.
+For the first version:
+Use local storage authentication
+Save profiles locally
+Keep users logged in
+Prepare structure for future backend authentication.
+10. Settings
+Include:
+Profile settings
+Language settings
+Dark/light mode
+Notification settings
+Account settings
+Technical Requirements
+React application
+Clean component structure
+Responsive design
+Professional SaaS style interface
+Expandable database structure
+API-ready architecture
+No hard-coded limitations
+Build this as a scalable international student platform.
